@@ -591,6 +591,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -604,17 +605,44 @@
           </svg>
         </button>
 
+        <p class="form-modal-title">
+          Leave your contacts and we will call you back
+        </p>
+
         <form class="contact-form">
-          <legend class="form-title">
-            Leave your contacts and we will call you back
-          </legend>
+          <div class="form-input-name">
+            <label for="user-name" class="form-label"> Name </label>
+
+            <div class="form-div-input">
+              <input
+                type="text"
+                name="user_name"
+                id="user-name"
+                class="form-input"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+"
+              />
+              <svg class="form-input-icon" width="18" height="24">
+                <use
+                  href="./images/icons.svg#icon-person"
+                  class="form-icon-use"
+                ></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <input type="text" />
+            <svg>
+              <use></use>
+            </svg>
+          </div>
 
           <label for="">
             <input type="text" />
-          </label>
-
-          <label for="">
-            <input type="text" />
+            <svg>
+              <use></use>
+            </svg>
           </label>
 
           <label for="">
@@ -623,7 +651,6 @@
         </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
