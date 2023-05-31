@@ -668,16 +668,34 @@
             </div>
           </div>
 
-          <div class="form-input-name">
+          <div class="form-textarea-name">
             <label for="user-comment" class="form-label"> Comment </label>
-            <div>
-              <textarea
-                class="textarea"
-                name="user-comment"
-                id="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+
+            <textarea
+              class="textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <label for="user-privacy" class="checkbox-label">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                value="true"
+                name="user-privacy"
+                required
+              />
+              I accept the terms and conditions of the
+              <span class="form-checkbox-span">
+                <svg>
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+            </label>
           </div>
         </form>
       </div>

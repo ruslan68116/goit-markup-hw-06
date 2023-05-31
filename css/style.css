@@ -800,6 +800,18 @@ img {
   border-color: #4d5ae5;
 }
 
+.form-textarea-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 16px;
+}
+
 .textarea {
   width: 100%;
   height: 120px;
@@ -821,4 +833,42 @@ img {
 }
 .textarea:focus {
   border-color: #4d5ae5;
+}
+
+.form-checkbox {
+  margin-bottom: 24px;
+}
+
+.checkbox {
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+}
+
+.user-privacy {
+}
+.checkbox-label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.form-checkbox-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color var(--overlay-on-page);
+  fill: transparent;
 }
