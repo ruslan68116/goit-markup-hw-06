@@ -615,8 +615,8 @@
 
             <div class="form-div-input">
               <input
-                class="form-input"
                 type="text"
+                class="form-input"
                 name="user-name"
                 id="user-name"
                 required
@@ -631,23 +631,56 @@
             </div>
           </div>
 
-          <div>
-            <input type="text" />
-            <svg>
-              <use></use>
-            </svg>
+          <div class="form-input-name">
+            <label for="user-phone" class="form-label"> Phone </label>
+
+            <div class="form-div-input">
+              <input
+                type="tel"
+                class="form-input"
+                name="user-phone"
+                id="user-phone"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
-          <label for="">
-            <input type="text" />
-            <svg>
-              <use></use>
-            </svg>
-          </label>
+          <div class="form-input-name">
+            <label for="user-email" class="form-label"> Email </label>
 
-          <label for="">
-            <input type="text" />
-          </label>
+            <div class="form-div-input">
+              <input
+                type="text"
+                class="form-input"
+                name="user-email"
+                id="user-email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+              <svg class="form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-textarea-name">
+            <label for="user-comment" class="form-label-comment">
+              Comment
+            </label>
+            <div>
+              <textarea
+                class="textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
         </form>
       </div>
     </div>
