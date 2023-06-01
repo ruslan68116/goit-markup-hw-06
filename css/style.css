@@ -540,6 +540,22 @@ img {
 .footer-social-link:focus {
   background-color: var(--footer-social-hover);
 }
+/* footer form */
+
+.footer-form-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+   gap 24px
+}
+
 /* page portfolio */
 /* page portfolio */
 /* page portfolio */
@@ -823,12 +839,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.4);
+
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
   outline: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.2)
+  border: 1px solid rgba(46, 47, 66, 0.2);
 
   transition: border-color var(--overlay-on-page);
 }
@@ -840,17 +856,13 @@ img {
   margin-bottom: 24px;
 }
 
-.checkbox {
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
 }
 
-.user-privacy {
-}
 .checkbox-label {
+  display: inline-flex;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -861,6 +873,7 @@ img {
   flex: none;
   order: 1;
   flex-grow: 0;
+  background-color: ;
 }
 .form-checkbox-span {
   display: inline-flex;
@@ -872,4 +885,32 @@ img {
   border-radius: 2px;
   transition: background-color var(--overlay-on-page);
   fill: transparent;
+}
+.checkbox-svg .form-icon-use {
+  opacity: 0;
+}
+
+.checkbox:checked + .checkbox-svg > .form-icon-use {
+  background-color: #404bbf;
+}
+
+.form-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color var(--overlay-on-page);
 }
