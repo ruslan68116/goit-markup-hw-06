@@ -935,7 +935,7 @@ img {
   border-radius: 2px;
 
   fill: transparent;
-
+  margin-right: 8px;
   transition: background-color var(--overlay-on-page),
     border var(--overlay-on-page), fill var(--overlay-on-page);
 }
