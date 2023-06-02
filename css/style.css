@@ -912,7 +912,6 @@ img {
 }
 
 .checkbox-label {
-  display: inline-flex;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -933,7 +932,7 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-
+  cursor: pointer;
   fill: transparent;
   margin-right: 8px;
   transition: background-color var(--overlay-on-page),
@@ -944,6 +943,9 @@ img {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
+}
+.checkbox:focus + .checkbox-svg {
+  outline: 1px solid #404bbf;
 }
 
 .form-button {
