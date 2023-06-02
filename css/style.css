@@ -581,7 +581,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto";
+  font-family: "Roboto" sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -936,7 +936,8 @@ img {
 
   fill: transparent;
 
-  transition: background-color, border, fill var(--overlay-on-page);
+  transition: background-color var(--overlay-on-page),
+    border var(--overlay-on-page), fill var(--overlay-on-page);
 }
 
 .checkbox:checked + .checkbox-label > .form-checkbox-span {
