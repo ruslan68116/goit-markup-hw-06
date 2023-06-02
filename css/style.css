@@ -559,6 +559,7 @@ img {
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -567,6 +568,7 @@ img {
   border-radius: 4px;
   color: #ffffff;
   background: #2e2f42;
+  background-color: transparent;
 }
 
 .footer-form-input::placeholder {
@@ -897,6 +899,15 @@ img {
 
 .visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -912,7 +923,6 @@ img {
   flex: none;
   order: 1;
   flex-grow: 0;
-  background-color: ;
 }
 
 .form-checkbox-span {
@@ -926,13 +936,10 @@ img {
 
   fill: transparent;
 
-  transition: background-color var(--overlay-on-page);
-}
-.checkbox-svg .form-icon-use {
-  opacity: 0;
+  transition: background-color, border, fill var(--overlay-on-page);
 }
 
-.checkbox:checked + .checkbox-svg > .form-icon-use {
+.checkbox:checked + .checkbox-label > .form-checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
@@ -945,7 +952,7 @@ img {
 
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto";
+  font-family: "Roboto" sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
