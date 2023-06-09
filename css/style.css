@@ -944,7 +944,7 @@ img {
   border: none;
   fill: #ffffff;
 }
-.checkbox:focus + .checkbox-svg {
+.checkbox:focus + .checkbox-label > .form-checkbox-span > .checkbox-svg {
   outline: 1px solid #404bbf;
 }
 
